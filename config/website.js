@@ -89,16 +89,16 @@ module.exports = {
   backgroundColor: '#2e3246',
 
   postDirs: {
-    'photo-serie': 'photo-series/posts',
-    'photo-project': 'photo-projects/posts',
-    blog: 'blog/posts',
+    'photo-serie': { folder: 'photo-series/posts' },
+    'photo-project': { folder: 'photo-projects/posts' },
+    blog: { folder: 'blog/posts' },
   },
 
   pageDirs: {
-    page: 'pages',
-    photoSeriePage: 'photo-series/pages',
-    photoProjectPage: 'photo-projects/pages',
-    blogPage: 'blog/pages',
+    page: { folder: 'pages' },
+    photoSeriePage: { folder: 'photo-series/pages' },
+    photoProjectPage: { folder: 'photo-projects/pages' },
+    blogPage: { folder: 'blog/pages' },
   },
 
   cardsPerPage: 6,
@@ -106,4 +106,6 @@ module.exports = {
   templatesDir: '/templates/',
 
   readMore: 'post.read',
+
+  noBreadcrumbs: true,
 };
